@@ -13,7 +13,7 @@ import AboutScreen from './screens/AboutScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import UserProfile from './screens/UserProfileScreen';
 import GfgScreen from './screens/GfgScreen';
-import ChatBot from './screens/ChatBot';
+// import ChatBot from './screens/ChatBot';
 
 const Stack = createStackNavigator();
 
@@ -30,7 +30,7 @@ export default function App() {
         <Stack.Screen name="profile" component={ProfileScreen} options={{ headerShown: true }} />
         <Stack.Screen name="userprofile" component={UserProfile} options={{ headerShown: true }} />
         <Stack.Screen name="gfgprofile" component={GfgScreen} options={{ headerShown: true }} />
-        <Stack.Screen name="ChatBot" component={ChatBot} options={{ headerShown: true }} />
+        {/* <Stack.Screen name="ChatBot" component={ChatBot} options={{ headerShown: true }} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );

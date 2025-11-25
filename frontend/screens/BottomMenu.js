@@ -10,7 +10,7 @@ import SearchScreen from './SearchScreen';
 import PotDsPage from './Potd';
 // import ContestPage from './Contest';
 import ContestList from './ContestScreen';
-import ChatBot from './ChatBot';
+// import ChatBot from './ChatBot';
 
 const Tab = createBottomTabNavigator();
 
@@ -26,8 +26,8 @@ const BottomTabNavigator = () => {
         return HomeScreen;
       case 'ProfileScreen':
         return ProfileScreen;
-      case 'ChatBot':
-        return ChatBot;
+      // case 'ChatBot':
+      //   return ChatBot;
       case 'PotdScreen':
         return PotDsPage;
       case 'ContestScreen':
@@ -103,7 +103,7 @@ const BottomTabNavigator = () => {
             ),
           }}
         /> */}
-        <Tab.Screen
+        {/* <Tab.Screen
           name="ChatBot"
           component={ChatBot}
           listeners={{
@@ -121,7 +121,7 @@ const BottomTabNavigator = () => {
               />
             ),
           }}
-        />
+        /> */}
         <Tab.Screen
           name="Contest"
           component={ContestList}
